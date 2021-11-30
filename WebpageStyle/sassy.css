@@ -1,0 +1,256 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  background-image: url("../Photos/you're never fully dressed without jewelery (2).png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  height: 100%;
+  right: 0;
+  padding: 0;
+  margin: 0;
+  background-color: rgba(56, 55, 55, 0.3);
+}
+
+nav {
+  position: absolute;
+  top: 100px;
+  right: 0;
+  left: 0;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 50px 60px 0 60px;
+}
+
+nav h2 {
+  font-size: 40px;
+  font-family: 'Roboto', sans-serif;
+  color: rgba(53, 20, 5, 0.925);
+}
+
+nav li {
+  display: inline-block;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+nav li span {
+  padding-left: 5px;
+}
+
+nav li a {
+  padding: 5px;
+  color: rgba(104, 43, 14, 0.925);
+  background-color: #ebd2ae;
+  font-family: 'Roboto', sans-serif;
+}
+
+nav .cart i {
+  font-size: 20px;
+  padding-right: 6px;
+}
+
+nav .cart a {
+  font-family: 'Roboto', sans-serif;
+  background-color: rgba(104, 43, 14, 0.925);
+  margin: 5px;
+  color: #fff2f2;
+  cursor: pointer;
+}
+
+.container {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 50px;
+  padding-bottom: 30px;
+}
+
+.container .image {
+  margin-right: 50px;
+  margin-left: 50px;
+  overflow: hidden;
+  position: relative;
+}
+
+.container .image img {
+  width: 300px;
+  height: auto;
+  text-align: center;
+  padding: 15px;
+}
+
+.container .image .add-cart {
+  position: absolute;
+  width: 270px;
+  left: 15px;
+  background-color: rgba(104, 43, 14, 0.925);
+  color: #fff2f2;
+  -webkit-transition: all 0.3 ease-in-out;
+  transition: all 0.3 ease-in-out;
+  opacity: 0;
+  cursor: pointer;
+  text-align: center;
+}
+
+.container .image:hover .cart1 {
+  bottom: 50px;
+  opacity: 1;
+  padding: 10px;
+}
+
+.container .image:hover .cart2 {
+  bottom: 50px;
+  opacity: 1;
+  padding: 10px;
+}
+
+.container .image:hover .cart3 {
+  bottom: 50px;
+  opacity: 1;
+  padding: 10px;
+}
+
+.container .image:hover .cart4 {
+  bottom: 50px;
+  opacity: 1;
+  padding: 10px;
+}
+
+.container .image:hover .cart5 {
+  bottom: 50px;
+  opacity: 1;
+  padding: 10px;
+}
+
+.container .image:hover .cart6 {
+  bottom: 50px;
+  opacity: 1;
+  padding: 10px;
+}
+
+.container .image:hover .cart7 {
+  bottom: 50px;
+  opacity: 1;
+  padding: 10px;
+}
+
+.container .image:hover .cart8 {
+  bottom: 50px;
+  opacity: 1;
+  padding: 10px;
+}
+
+.container .image:hover .cart9 {
+  bottom: 50px;
+  opacity: 1;
+  padding: 10px;
+}
+
+.product-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 50px;
+  padding-bottom: 30px;
+  max-width: 650px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.product-container .product-header {
+  width: 100%;
+  max-width: 650px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  border-bottom: 4px solid rgba(104, 43, 14, 0.925);
+}
+
+.product-container .product-header .product-title {
+  width: 45%;
+}
+
+.product-container .product-header .price {
+  width: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product-container .product-header .quantity {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product-container .product-header .total {
+  width: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product-container .product-header .product {
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+}
+/*# sourceMappingURL=sassy.css.map */

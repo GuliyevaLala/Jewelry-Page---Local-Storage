@@ -1,0 +1,201 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+@mixin hoverfunc {
+    bottom: 50px;
+    opacity: 1;
+    padding: 10px;
+    
+}
+header{
+    background-image: url('../Photos/you\'re\ never\ fully\ dressed\ without\ jewelery\ \(2\).png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    position: relative;
+}
+.overlay{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    right: 0;
+    padding: 0;
+    margin: 0;
+    background-color: rgba(56, 55, 55, 0.3);
+
+}
+nav{
+    position: absolute;
+    top: 100px;
+    right: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px 60px 0 60px;
+    h2{
+        font-size: 40px;
+        font-family: 'Roboto', sans-serif;
+        color: rgba(53, 20, 5, 0.925);
+
+    }
+    li{
+        display: inline-block;
+        padding-right: 10px;
+        padding-left: 10px;
+        span{
+            padding-left: 5px;
+        }
+    
+        a{
+            padding: 5px;
+            color: rgba(104, 43, 14, 0.925);
+            background-color: rgb(235, 210, 174);
+            font-family: 'Roboto', sans-serif;
+        
+        }
+ 
+    }
+    .cart{
+        i{
+            font-size: 20px;
+            padding-right: 6px;
+        }
+        a{
+            font-family: 'Roboto', sans-serif;
+            background-color: rgba(104, 43, 14, 0.925);
+            margin: 5px;
+            color: rgb(255, 242, 242);
+            cursor: pointer;
+        }
+    }
+}
+.container{
+     height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    padding-bottom: 30px;
+    .image{
+        margin-right: 50px;
+        margin-left: 50px; 
+        overflow: hidden;
+        position: relative;
+        img{
+            width: 300px;  
+            height: auto;  
+            text-align: center;  
+            padding: 15px;
+
+        }
+        // .frontimg{
+        //     position: absolute;
+        //     transition: 2s;
+        //     z-index: 1;
+        //     &:hover{
+        //         opacity: 0;   
+        //     }
+        // }
+        // .backimg{
+        //     position: absolute;
+        // }
+        
+        .add-cart{
+            position: absolute;
+            width: 270px;
+            left: 15px;
+            background-color: rgba(104, 43, 14, 0.925);
+            color: rgb(255, 242, 242);
+            transition: all 0.3 ease-in-out;
+            opacity: 0;
+            cursor: pointer;
+            text-align: center;
+                 
+        }
+        &:hover .cart1{
+            @include hoverfunc;
+        
+        }
+        &:hover .cart2{
+            @include hoverfunc;
+        }
+        &:hover .cart3{
+        @include hoverfunc;
+        }
+        &:hover .cart4{
+        @include hoverfunc;
+        }
+        &:hover .cart5{
+        @include hoverfunc;
+        }
+        &:hover .cart6{
+        @include hoverfunc;
+        }
+        &:hover .cart7{
+        @include hoverfunc;
+        }
+        &:hover .cart8{
+        @include hoverfunc;
+        }
+        &:hover .cart9{
+            @include hoverfunc;
+            }
+       
+    }
+}
+.product-container{
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    padding-bottom: 30px;
+    max-width: 650px;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 50px;
+    .product-header{
+        width: 100%;
+        max-width: 650px;
+        display: flex;
+        justify-content: flex-start;
+        border-bottom: 4px solid rgba(104, 43, 14, 0.925);
+        .product-title{
+            width: 45%;
+        }
+        .price{
+            width: 15%;
+            display: flex;
+            align-items: center;
+        }
+        .quantity{  
+            width: 30%;
+            display: flex;
+            align-items: center;
+
+        }
+        .total{
+            width: 10%;
+            display: flex;
+            align-items: center;
+        }
+        .product{
+            width: 45%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 0;
+           
+        }
+    }
+}
